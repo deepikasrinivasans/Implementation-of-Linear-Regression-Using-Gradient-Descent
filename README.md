@@ -42,16 +42,13 @@ data=pd.read_csv("/content/50_Startups.csv")
 data.head()
 X=(data.iloc[1:,:-2].values)
 X1=X.astype(float)
-
 scaler=StandardScaler()
 y=(data.iloc[1:,-1].values).reshape(-1,1)
 X1_Scaled=scaler.fit_transform(X1)
 Y1_Scaled=scaler.fit_transform(y)
 print(X)
 print(X1_Scaled)
-#Learn model Parameters
 theta= linear_regression(X1_Scaled,Y1_Scaled)
-#Predict data value for a new value point
 new_data=np.array([165349.2,136897.8,471784.1]).reshape(-1,1)
 new_Scaled=scaler.fit_transform(new_data)
 prediction=np.dot(np.append(1,new_Scaled),theta)
