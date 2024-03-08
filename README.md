@@ -20,6 +20,7 @@ Developed by: DEEPIKA S
 RegisterNumber:  212222230028
 */
 ```
+```
 import numpy as np 
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -58,15 +59,13 @@ prediction=prediction.reshape(-1,1)
 pre=scaler.inverse_transform(prediction)
 print(prediction)
 print(f"Predicted value: {pre}")
+```
 ## Output:
-#### Data Head
+#### data.head()
 ![intro to m1 1](https://github.com/deepikasrinivasans/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/119393935/14230684-595b-4f45-8e21-dde74a5c0dc1)
 
 ![intro to m1 2](https://github.com/deepikasrinivasans/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/119393935/0c6b1ee8-a194-4548-9eec-44cffd8a1cbd)
 #### Predicted Value
 ![intro to m1 3](https://github.com/deepikasrinivasans/Implementation-of-Linear-Regression-Using-Gradient-Descent/assets/119393935/2797cf29-0b35-4b01-8864-1a4b356caf4b)
-
-
-
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
